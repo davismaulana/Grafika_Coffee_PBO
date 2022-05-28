@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="1036.0" spacing="30.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.grafikacoffee.item_laporan_tabel">
+   <children>
+      <Label fx:id="idLabel" prefWidth="19.0" text="1">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="namaMenu" layoutX="20.0" layoutY="15.0" prefWidth="179.0" text="23/1/2022">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="jenisMenu" layoutX="169.0" layoutY="15.0" prefWidth="119.0" text="january">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="totalTerjual" layoutX="43.0" layoutY="15.0" prefWidth="103.0" text="Dasi">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="pendapatan" layoutX="333.0" layoutY="15.0" prefWidth="141.0" text="10">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="namaKasir" layoutX="545.0" layoutY="15.0" prefWidth="181.0" text="5000">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="tanggal" layoutX="884.0" layoutY="15.0" prefWidth="111.0" text="500000">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</HBox>

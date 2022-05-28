@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.grafikacoffee.kasir">
+   <children>
+      <AnchorPane layoutX="-6.0" prefHeight="55.0" prefWidth="1286.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: #302f2f; -fx-background-radius: 10;">
+               <graphic>
+                  <ImageView fx:id="menu" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../image/icons8-menu-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="closeBtn" layoutX="1225.0" layoutY="5.0" mnemonicParsing="false" onAction="#closeActionBtn" style="-fx-background-color: #ffff;">
+               <graphic>
+                  <ImageView fx:id="close" fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../image/icons8-close-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <HBox alignment="CENTER_LEFT" layoutX="74.0" layoutY="14.0" prefHeight="32.0" prefWidth="199.0">
+               <children>
+                  <Label text="Hello">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="usernameLabel" layoutX="10.0" layoutY="15.0" text="Kasir" textFill="#470d0d">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label layoutX="61.0" layoutY="15.0" text="!">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="1.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="contentArea" layoutX="222.0" layoutY="55.0" prefHeight="645.0" prefWidth="1058.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0" />
+      <AnchorPane fx:id="pane2" layoutY="55.0" prefHeight="645.0" prefWidth="171.0" style="-fx-background-color: #ffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="55.0">
+         <children>
+            <VBox layoutY="48.0" prefHeight="409.0" prefWidth="166.0" spacing="40.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="48.0">
+               <children>
+                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" onAction="#transaksiPane" prefHeight="45.0" prefWidth="166.0" styleClass="sidebarItem" text="Transaksi">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" onAction="#laporanPane" prefHeight="45.0" prefWidth="166.0" styleClass="sidebarItem" text="Laporan">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="logout_btn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="266.0" prefHeight="45.0" prefWidth="166.0" styleClass="sidebarItem" text="Logout">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="55.0" prefHeight="645.0" prefWidth="55.0" style="-fx-background-color: #ffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="55.0">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="1.0" layoutY="50.0" prefHeight="367.0" prefWidth="54.0" spacing="40.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <ImageView fx:id="dashboard" fitHeight="45.0" fitWidth="45.0" layoutX="17.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../image/icons8-calculator-128.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="dashboard1" fitHeight="45.0" fitWidth="45.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../image/icons8-menu-squared-100.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="logout" fitHeight="50.0" fitWidth="45.0" layoutX="17.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../image/icons8-logout-90.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
